@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlterInMinuten</string>
+    <string name="berechne_dein_ger">Berechne dein</string>
+    <string name="alter">Alter</string>
+    <string name="in_minuten">in Minuten</string>
+    <string name="datum_auswählen">Datum auswählen</string>
+</resources>

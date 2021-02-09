@@ -1,8 +1,10 @@
 package com.ludwigbmw.quizapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -14,7 +16,14 @@ class MainActivity : AppCompatActivity() {
         hideStatusBar()
 
         btnStart.setOnClickListener {
-            if ()
+            if(etName.text.toString().isEmpty()) {
+                Toast.makeText(this, "Bitte gib einen Namen ein", Toast.LENGTH_LONG).show()
+            } else {
+                 var intent = Intent(this, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, etName.text.toString())
+                startActivity(intent)
+                finish()
+            }
         }
     }
 

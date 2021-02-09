@@ -1,7 +1,7 @@
-package com.ludwigbmw.quizapp
+package de.panjutorials.quizapp
 
 data class Question (
-    var id: Int,
+    val id: Int,
     val question: String,
     val image: Int,
     val optionOne: String,
@@ -9,4 +9,4 @@ data class Question (
     val optionThree: String,
     val optionFour: String,
     val correctAnswer: Int
-        )
+    )

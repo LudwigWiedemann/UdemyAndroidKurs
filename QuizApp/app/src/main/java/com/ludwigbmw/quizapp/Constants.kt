@@ -2,6 +2,8 @@ package com.ludwigbmw.quizapp
 
 object Constants {
     const val USER_NAME: String = "user_name"
+    const val CORRECT_ANSWERS = "correct answers"
+    const val TOTAL_QUESTIONS = "total questions"
 
     fun getQuestions(): ArrayList<Question> {
         var questionList = ArrayList<Question>()
